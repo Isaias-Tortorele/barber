@@ -1,10 +1,10 @@
 {
   "name": "barber",
   "version": "1.0.0",
-  "main": "src/server.ts",
+  "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon --exec ts-node --transpile-only src/server.ts",
+    "dev": "ts-node-dev --transpile-only src/server.ts",
     "build": "rm -rf ./dist && tsc",
     "vercel-build": "yarn prisma migrate deploy"
   },
