@@ -1,7 +1,7 @@
 {
   "name": "barber",
   "version": "1.0.0",
-  "main": "server.ts",
+  "main": "src/server.ts",
   "license": "MIT",
   "scripts": {
     "dev": "ts-node-dev --transpile-only src/server.ts",
