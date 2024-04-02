@@ -4,8 +4,8 @@
   "main": "src/server.ts",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev --transpile-only src/server.ts",
-    "build": "tsc",
+    "dev": "nodemon --exec ts-node --transpile-only src/server.ts",
+    "build": "rm -rf ./dist && tsc",
     "vercel-build": "yarn prisma migrate deploy"
   },
   "devDependencies": {
