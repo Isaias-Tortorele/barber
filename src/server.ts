@@ -12,7 +12,7 @@ app.use((req, res, next) => {
     express.json()(req, res, next);
   }
 });
-app.use(cors({ origin: "https://barber-web-lovat.vercel.app/" }));
+app.use(cors());
 
 app.use(router);
 
